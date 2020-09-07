@@ -1,0 +1,66 @@
+/*.........................SAECCION BLOG.............................*/
+  
+  
+  
+#blog .contenedor-publicaciones {
+  
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #blog .publicacion{
+  
+    width: 30%;
+    /*recordar que la sombre la puedo generar en la pag*/
+   
+    border-radius: 30px;
+  }
+  
+  #blog img {
+    width: 100%;
+    height: 160px;
+  }
+  
+  
+  
+  #blog .contenido {
+    background: rgb(20, 52, 121);
+    padding: 20px;
+    height: 92%;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 0px 3px 15px 6px rgb(0, 185, 231);
+  }
+  
+  #blog .contenido:hover {
+    
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px 15px rgb(0, 185, 231);
+  
+  }
+  
+  #blog h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin: 0;
+  }
+  
+  #blog p {
+    color: #fff;
+    line-height: 24px;
+    font-size: 16px;
+  }
+  
+  #blog a {
+    width: 87px;
+    
+  }
+  
+
+  @media (max-width: 800px){
+    #blog .publicacion{
+  
+      width: 100%;
+      
+    }
+  }

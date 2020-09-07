@@ -1,0 +1,384 @@
+/*PALETA
+rgb(20, 52, 121)
+rgb(11, 21, 49)
+#1D64F2
+rgb(0, 185, 231)
+*/
+
+
+
+#root{
+  margin: 0; 
+}
+
+.menu { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.menu.sticky {
+  background: #1D64F2;
+  height: 80px;
+  width: 100%;
+}
+
+.menu.sticky a {
+  color: #FFF;
+}
+
+body{
+    /*siempre es bueno poner el margin 0 al principio para quitar los amrgenes que vienen por defecto que nos ocupan lugar al dope*/
+    margin: 0;    
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 16px;
+    background-color:rgb(11, 21, 49);
+    color: rgb(0, 185, 231);    
+  }
+  
+  header .contenedor{
+  /*los estilos van por niveles. me va a plicar estilo al contenedor que este en el header*/
+    display: flex;
+    /*este va sobre el elemento PADRE. por eso va sobre el contenedor.*/
+    justify-content: space-between;
+  }
+ 
+  /*
+  .lista-menu a {
+    color: #fff;
+    text-shadow: 1px 1px 3px black;
+  }*/
+  
+  header ul {
+    display: flex;
+    /*color: white;*/
+    text-decoration: solid;  
+  }
+  
+  /*sacar puntitos de la lista*/
+  header ul li {
+    list-style: none;
+    margin: 15px;
+  }
+  
+  /*sacar subrayados. le saco el header para que aplique a todos los elementos a de la página*/
+  a {
+    text-decoration: none;
+  }
+  
+  .contenedor {
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+  }
+  
+  #contenedor-titulo-flex{
+  /*como es un solo div queda bien pero si fueran 2 div o una lista de ul quedarian simplemente uno al lado del otro*/
+    display: flex;
+    justify-content: center;
+  
+    /*viewport height es el alto de la ventana. le digo q me baje el 18% de la ventana.
+    y el 0? los amrgenes van en sentido del reloj: top right bottom left.
+    lo que hice es igual a :
+    margin-top: 18vh;
+    margin-right: 0px;
+    margin-bottom: 18vh;
+    margin-left: 0px;*/
+
+       /* margin: 8vh 0; */
+        max-width: 6500px;
+        width: 100%;
+  }
+  
+  header {
+    /*el linear-gradient es genial para sobreponer colores con transparencia a la imagen. yo no lo voy a usar por ahora. 
+    background: linear-gradient(rgba(52,183,191, .9), rgba(95,175,180, .9)), url(imagenes/fondo.jpg);  */
+    position: relative;    
+    background: url(fondo.jpg);  
+    /*esto significa 100% el alto de la pantalla. esto es muy importante para qu funcione bien en moviles*/
+    height: 100vh;    
+    /*esto adapta el tamaño al ancho de mi pantalla. es genial*/
+    background-size: cover;   
+  }
+  
+  h1 {
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 91px;
+    color: #FFF;
+    text-align: center;
+    margin: 0px;
+    margin-top: 120px;    
+    text-shadow: 4px 4px rgb(20, 52, 121)   
+   
+    /* Para bordes: -webkit-text-stroke: 0.01px rgb(20, 52, 121);*/
+    /*-webkit-text-stroke: 1px #1D64F2;*/
+    
+  }
+  
+  h2 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+    color: #1D64F2;
+    text-align: center;       
+  }
+  
+  .contenedor-titulo {
+    text-align: center;
+  }
+  
+  
+  /*-------------------AQUIII BOTONES!!!---------------------*/
+  /*aca agrego todos los botones para que tengan el mismo estilo, desps si quiero modificar uno lo modifico aparte*/
+  .contenedor-titulo a, #about a, #blog a, #que-esperas a, #contact input[type="submit"] {
+  
+    font-size: 14px;
+    color: #fff;
+    background: #1D64F2;
+    padding: 14px 24px;
+    /*el padding es iguial que el margin. top right bottom left. por eso puse 2 ejes y me lo acomodo*/
+    text-align: center;
+    width: 128px;
+    border-radius: 6px;
+  
+    /*hay elementos en linea y elementos de bloque. el elemento A es de LINEA. por eso no se alinea simplemente con un text-align. por eso le tengo que pponer inline-block. para alinear al centro le pongo la prop al contenedor-titulo*/
+    display: inline-block;
+    text-shadow: 1px 1px 3px black;    
+  }
+  
+  p.logo {  
+    color: #FFF;
+    font-size: 30px;
+    font-family: 'Lobster Two', cursive;
+    text-shadow: 1px 1px 3px black;     
+  }
+  
+   
+  h3 {  
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    color: rgb(0, 185, 231);
+    /*margin-top: 100px;    */
+  }
+  
+  
+  
+   /*.....................WHATSAPP.............................*/
+  
+   #whatsapp {  
+    position: fixed;
+    top: 80%;
+    right: 1%;
+    z-index: 200;  
+   }
+  
+   /*..............estilo html................*/
+  
+   html {
+       /*este es la animaciopn de cndo hago scroll por el documento*/
+       scroll-behavior: smooth;
+   }
+  
+   /*dando padding a las secciones para que cuando cliqueo en el link se vea el titulo y no se tape*/
+  
+   #about, #advices, #courses, #why, #blog, #contact {
+  
+  padding: 70px 0;
+  }
+
+ 
+   
+   .menu-icon {
+       /*display none sirve para eliminar un elemento de la pantalla*/
+    display: none;  
+   }
+  
+  
+   /*en el medio que se va a ver esta pag sera con un ancho maximo de 800 px (suficiente para tablets como para fonos) si es solo para celus le ponemos 480px. */
+  
+  
+
+
+  
+   @media (max-width: 800px) {
+  
+  
+    .lista-menu a {
+        color: rgb(255, 255, 255);
+    }
+  
+  
+    .menu-icon{
+        /*es lo contrario al display none*/
+        display: block;
+        /*primero no flotara porque esta el menu estorbando*/
+        float: right;
+        width: 40px;
+        height: 40px;
+        padding: 20px 20px;
+    }
+   
+    header nav {
+        position: absolute;
+        top: 76px;
+        left: 0;
+        height: 0px;
+        background: #1D64F2;
+        width: 100%;
+        display: none;
+    }
+
+    header nav.on {
+      display: block;
+      height: 380px;
+    }
+  
+    header nav ul {
+      
+        flex-direction: column;
+        color: white;
+    }
+  
+    header nav ul li {
+  
+        margin-bottom: 15px;
+    }
+  
+    header h1 {
+            font-size: 65px;
+            margin-top: 140px;
+            margin-bottom: 25px;
+            padding-bottom: 75px;
+            text-shadow: 4px 4px 2px rgb(20, 52, 121)
+            
+    }
+    
+  
+    h2 {
+        font-size: 24px;
+        color: white;
+    }
+  
+    h3 {
+        font-size: 45px;
+    }  
+      
+    .contenedor-titulo h2 {
+        font-size: 30px;
+        text-shadow: 1px 1px 3px black; 
+    }
+  
+  
+  
+  
+    
+    
+  
+    #blog .contenedor-publicaciones {
+        flex-direction: column;
+  
+    }
+  
+    #blog .publicacion {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+  
+    #contact form {
+        flex-direction: column;
+        width: 86%;
+    }
+  
+    input[type="text"], input[type="email"] {
+        width: 84%;
+        
+    }
+  
+    footer img {
+        margin: 24px;
+    }
+  
+    .lista-menu li a {
+        color: rgb(245, 247, 250);
+    }
+  
+    .contacto-info {
+        flex-direction: column;
+    }
+  
+    #whatsapp img {
+  
+        width: 53px;
+        height: 53px;
+    }
+  /*
+    .contenedor-titulo h1 {
+        -webkit-text-stroke: 0.01cm white;
+        color: rgb(0, 65, 161);
+  
+    }*/
+  
+  }
+  
+
+  
+  @media (max-width: 330px) {
+  
+    header h1 {
+        font-size: 44px;
+        margin-bottom: 25px;
+        padding-bottom: 113px;
+        text-shadow: 4px 4px 2px rgb(20, 52, 121)
+    }
+  
+    .contenedor-titulo h2 {
+  
+        font-size: 25px;
+    }
+  
+    #whatsapp img {
+  
+        width: 30px;
+        height: 30px;
+        top: 86%;
+    }
+  
+    #about img {
+  
+        height: 250px;
+    }
+  
+    .lista-menu li {
+        font-size: 14px;
+    }
+  
+  }
+
+
+  
+  @media (min-width: 600px) and (max-width: 800px) {
+  
+    header {
+        height: 70vh;
+    }
+  
+    header h1 {
+        margin-bottom: 213px;
+        font-size: 90px;
+    }
+  
+    .contenedor-advices {
+  
+        width: 500px;
+        /*margin auto para centrarlo*/
+        margin: auto;
+    }
+  
+    .contenedor-publicaciones {
+  
+        width: 70%;
+        margin: auto;
+    }
+  }

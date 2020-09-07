@@ -1,0 +1,18 @@
+/*...............................SECCION QUE ESPERAS....................................*/
+  
+#que-esperas{
+    background: linear-gradient(rgb(11, 21, 49), #1D64F2);
+    text-align: center;
+    /*aqui le pongo 50px de espacio arriba y abajo. 0 a los costados*/
+    padding: 50px 0;
+    margin-top: 40px;
+  }
+  
+    
+  #que-esperas h4{
+    font-size: 20px;
+    color: #FFF;
+    font-style: normal;
+    /*para darle estilo al boton vuelvo al que configure mas arriba e incluyo este nuevo ;)*/
+  }
+  

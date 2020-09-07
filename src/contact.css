@@ -1,0 +1,66 @@
+/*...................................SECCION CONTACTO.....................................*/
+  
+#contact form {
+  
+    display: flex;
+    /*uno al lado del otro*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 77%;
+    /*como centrarlo??? margin: auto*/
+    margin: auto;
+    
+  }
+  
+  input[type="text"], input[type="email"] {
+     color: #fff;
+     width: 49%;
+     margin-bottom: 15px;
+     padding: 18px 0;
+     border: 0;
+     border-bottom: 2px solid rgb(0, 185, 231);
+     font-size: 17px;
+     background-color: transparent;
+     
+  } 
+  
+  textarea {
+     padding: 18px 12px 0px 12px;
+     border: 0;
+     color: #fff;
+     border-bottom: 2px solid rgb(0, 185, 231);
+     font-size: 17px;
+     margin-bottom: 40px;
+     width: 90%;
+     background-color: transparent;
+    
+  }
+  
+  /*EL BOTON LO AGREGO EN LA PARTE DE BOTONES*/
+  
+  #contact input[type="submit"] {
+     width: 166px;
+     margin: auto;
+     
+  
+  }
+  
+  
+  .contacto-info {
+  
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+  
+  }
+  
+  .contacto-info img {
+    width: 28px;
+    /*el vertical align me alinea la foto con el texto apra que no queda cada unoa rriba del otro o desalineado*/
+    vertical-align: middle;
+    /*con margin-right: separo la imagen del texto;*/
+    margin-right: 10px;
+  }
+  
+  
+  
