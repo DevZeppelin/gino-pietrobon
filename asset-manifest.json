@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/gino-pietrobon/static/css/main.9ef645fd.chunk.css",
+    "main.js": "/gino-pietrobon/static/js/main.cba35076.chunk.js",
+    "main.js.map": "/gino-pietrobon/static/js/main.cba35076.chunk.js.map",
+    "runtime-main.js": "/gino-pietrobon/static/js/runtime-main.a195cf73.js",
+    "runtime-main.js.map": "/gino-pietrobon/static/js/runtime-main.a195cf73.js.map",
+    "static/js/2.30d88bed.chunk.js": "/gino-pietrobon/static/js/2.30d88bed.chunk.js",
+    "static/js/2.30d88bed.chunk.js.map": "/gino-pietrobon/static/js/2.30d88bed.chunk.js.map",
+    "index.html": "/gino-pietrobon/index.html",
+    "precache-manifest.d19c06ef340297f9377b0a46e85f9da9.js": "/gino-pietrobon/precache-manifest.d19c06ef340297f9377b0a46e85f9da9.js",
+    "service-worker.js": "/gino-pietrobon/service-worker.js",
+    "static/css/main.9ef645fd.chunk.css.map": "/gino-pietrobon/static/css/main.9ef645fd.chunk.css.map",
+    "static/js/2.30d88bed.chunk.js.LICENSE.txt": "/gino-pietrobon/static/js/2.30d88bed.chunk.js.LICENSE.txt",
+    "static/media/globals.css": "/gino-pietrobon/static/media/fondo.e07a51ba.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a195cf73.js",
+    "static/js/2.30d88bed.chunk.js",
+    "static/css/main.9ef645fd.chunk.css",
+    "static/js/main.cba35076.chunk.js"
+  ]
+}

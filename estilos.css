@@ -1,0 +1,786 @@
+/*las #id no se pueden repetir*/
+
+/*PALETA
+rgb(20, 52, 121)
+rgb(11, 21, 49)
+#1D64F2
+rgb(0, 185, 231)
+
+*/
+
+
+body{
+    /*siempre es bueno poner el margin 0 al principio para quitar los amrgenes que vienen por defecto que nos ocupan lugar al dope*/
+    margin: 0;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 16px;
+    background-color:rgb(11, 21, 49);
+    color: rgb(0, 185, 231);
+    
+}
+
+header .contenedor{
+/*los estilos van por niveles. me va a plicar estilo al contenedor que este en el header*/
+    display: flex;
+    /*este va sobre el elemento PADRE. por eso va sobre el contenedor.*/
+    justify-content: space-between;
+    /*justificame el contenido a los espacios. tambein podria poner center, o flex-start para qe vaya a la izquierda*/
+
+}
+
+
+/*debo llamar a la etiqueta padre para ordenar los elementos de la lista. le tengo que poner clase al ul, el display flex lo que hizo fue poner un item al aldo del otro en vez de uno arriba del otro.*/
+
+
+.lista-menu a {
+    color: #fff;
+    text-shadow: 1px 1px 3px black; 
+    
+   
+}
+
+
+
+header ul {
+    display: flex;
+    /*color: white;*/
+    text-decoration: solid;  
+}
+
+
+/*sacar puntitos de la lista*/
+
+header ul li {
+    list-style: none;
+    margin: 15px;
+}
+
+/*sacar subrayados. le saco el header para que aplique a todos los elementos a de la página*/
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+
+#contenedor-titulo-flex{
+/*como es un solo div queda bien pero si fueran 2 div o una lista de ul quedarian simplemente uno al lado del otro*/
+    display: flex;
+    justify-content: center;
+
+    /*viewport height es el alto de la ventana. le digo q me baje el 18% de la ventana.
+    y el 0? los amrgenes van en sentido del reloj: top right bottom left.
+    lo que hice es igual a :
+    margin-top: 18vh;
+    margin-right: 0px;
+    margin-bottom: 18vh;
+    margin-left: 0px;*/
+        margin: 8vh 0;
+        max-width: 1500px;
+        width: 100%;
+}
+
+header {
+    /*el linear-gradient es genial para sobreponer colores con transparencia a la imagen. yo no lo voy a usar por ahora. 
+    
+        background: linear-gradient(rgba(52,183,191, .9), rgba(95,175,180, .9)), url(imagenes/fondo.jpg);
+    */
+    background: url(imagenes/fondo.jpg);
+
+    /*esto significa 100% el alto de la pantalla. esto es muy importante para qu funcione bien en moviles*/
+    height: 100vh;
+    
+    /*esto adapta el tamaño al ancho de mi pantalla. es genial*/
+    background-size: cover;
+  
+
+
+   
+}
+
+h1 {
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 91px;
+    color: #FFF;
+    text-align: center;
+    margin: 0px;
+    /* Para bordes: -webkit-text-stroke: 0.01px rgb(20, 52, 121);*/
+    -webkit-text-stroke: 0.1px #1D64F2;
+    
+    
+    
+}
+
+h2 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+    color: #1D64F2;
+    text-align: center;
+    
+    
+}
+
+.contenedor-titulo {
+    text-align: center;
+}
+
+
+/*-------------------AQUIII BOTONES!!!---------------------*/
+/*aca agrego todos los botones para que tengan el mismo estilo, desps si quiero modificar uno lo modifico aparte*/
+.contenedor-titulo a, #about a, #blog a, #que-esperas a, #contact input[type="submit"] {
+
+    font-size: 14px;
+    color: #fff;
+    background: #1D64F2;
+    padding: 14px 24px;
+    /*el padding es iguial que el margin. top right bottom left. por eso puse 2 ejes y me lo acomodo*/
+    text-align: center;
+    width: 128px;
+    border-radius: 6px;
+
+    /*hay elementos en linea y elementos de bloque. el elemento A es de LINEA. por eso no se alinea simplemente con un text-align. por eso le tengo que pponer inline-block. para alinear al centro le pongo la prop al contenedor-titulo*/
+    display: inline-block;
+    text-shadow: 1px 1px 3px black; 
+   
+}
+
+p.logo {
+
+    color: #FFF;
+    font-size: 30px;
+    font-family: 'Lobster Two', cursive;
+    text-shadow: 1px 1px 3px black; 
+    
+}
+
+/*.........................SECCION DE "SOBRE MI"..................*/
+
+h3 {
+
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    color: rgb(0, 185, 231);
+    /*margin-top: 100px;    */
+}
+
+
+
+#about .contenedor-sobremi {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#about .texto {
+    
+    width: 42%;
+    text-align: justify;
+}
+
+
+/*.........................SECCION DE "SERVICIOS"..................*/
+
+.contenedor-advices {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+}
+
+
+
+
+.advice {
+
+    width: 24%;
+    /*el padding es para aumentar el tamaño interno del elemento*/
+    padding: 32px 25px 40px 25px;
+    /*top - right - bottom - left.. siempre en sentido horario*/
+    
+    /*es el redonde de las puntas*/
+    border-radius: 10px;
+    /*es el margen que le doy para separrarlos de los de abajo*/
+    margin-bottom: 40px;
+    /**/
+    position: relative;
+}
+
+.advice h4 {
+
+    font-size: 24px;
+    margin: 0; 
+    text-shadow: 1px 1px 3px black; 
+}
+
+.advice p {
+
+    font-size: 16px;
+    margin-bottom: 40px;
+    /*aca defino que todos los parrafos tengan el mismo alto para que los iconos queden alineados*/
+    height: 115px;
+}
+
+.advice a {
+
+    color: white;
+}
+
+.contenedor-advices .violeta {
+
+    background: linear-gradient(to top, rgb(20, 52, 121), rgb(11, 21, 49));
+    box-shadow: 0px 0px 15px 6px rgb(0, 185, 231);
+}
+
+
+
+.contenedor-advices .celeste {
+    /*en google pongo linear gradient css y me sale para armarlo ahi*/
+    background: linear-gradient(to top, rgb(11, 21, 49), rgb(20, 52, 121));
+    /*en google pongo box shadow generator y lo configuro ahi*/
+    box-shadow: 0px 3px 15px 6px rgb(0, 185, 231);
+}
+
+.advice:hover {
+    
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px 15px rgb(0, 185, 231);
+
+}
+
+.ondas {
+    /*aqui le digo que la imagen ocupe absolutamente todo el espacio*/
+    position: absolute;
+    /*como sabe la imagen wave donde es el 0? porque le pose position : relative a la clase advice que es la que tiene la position relative*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.35;
+}
+
+.icono {
+    /*flotame los iconos a la derecha*/
+    float: right;
+    
+    
+    
+    
+}
+
+/*.........................SECCION MIS TRABAJOS.....................*/
+
+button.owl-prev, button.owl-next {
+
+    font-size: 40px !important;
+    }
+
+span {
+    /*SPAN es una etiqueta HTML q no tienen ningun significado semantico, es solamente para poner un elemento en una etiqueta y darle estilos*/
+    color: #1D64F2;
+}
+
+.item p {
+
+    text-align: center;
+}
+
+.item img:hover {
+    transform: scale(1.1);
+}
+
+/*.........................POR QUE TRABAJAR CONMIGO?.............................*/
+
+.contenedor-why {
+
+    display: flex;
+    /*el wrap era x si los elementos ocupan mucho lugar pasan a la otra línea*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+#why .item {
+
+    width: 28%;
+    text-align: center;
+    
+
+}
+
+#why ul {
+    list-style: none;
+}
+
+/*aqui llamo al elemento hijo n°2. li es hijo de ul. el 1 seria la imagen . el 2 velocidad. y el 3 el parrafo. tmb puedo usar first-child o last-child*/
+#why ul li:nth-child(2){
+
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#why ul li:nth-child(3){
+
+    line-height: 31px;
+}
+
+/*.........................SAECCION BLOG.............................*/
+
+
+
+#blog .contenedor-publicaciones {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#blog .publicacion{
+
+    width: 30%;
+    /*recordar que la sombre la puedo generar en la pag*/
+   
+    border-radius: 30px;
+}
+
+#blog img {
+    width: 100%;
+    height: 160px;
+}
+
+
+
+#blog .contenido {
+    background: rgb(20, 52, 121);
+    padding: 20px;
+    height: 92%;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 0px 3px 15px 6px rgb(0, 185, 231);
+}
+
+#blog .contenido:hover {
+    
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px 15px rgb(0, 185, 231);
+
+}
+
+#blog h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin: 0;
+}
+
+#blog p {
+    color: #fff;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+#blog a {
+    width: 87px;
+    
+}
+
+/*...............................SECCION QUE ESPERAS....................................*/
+
+#que-esperas{
+    background: linear-gradient(rgb(11, 21, 49), #1D64F2);
+    text-align: center;
+    /*aqui le pongo 50px de espacio arriba y abajo. 0 a los costados*/
+    padding: 50px 0;
+    margin-top: 40px;
+    }
+
+    
+#que-esperas h4{
+    font-size: 23px;
+    color: #FFF;
+    /*para darle estilo al boton vuelvo al que configure mas arriba e incluyo este nuevo ;)*/
+}
+
+/*...................................SECCION CONTACTO.....................................*/
+
+ #contact form {
+
+    display: flex;
+    /*uno al lado del otro*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 77%;
+    /*como centrarlo??? margin: auto*/
+    margin: auto;
+    
+ }
+
+ input[type="text"], input[type="email"] {
+     color: #fff;
+     width: 49%;
+     margin-bottom: 15px;
+     padding: 18px 0;
+     border: 0;
+     border-bottom: 2px solid rgb(0, 185, 231);
+     font-size: 17px;
+     background-color: transparent;
+     
+ } 
+
+ textarea {
+     padding: 18px;
+     border: 0;
+     color: #fff;
+     border-bottom: 2px solid rgb(0, 185, 231);
+     font-size: 17px;
+     margin-bottom: 40px;
+     width: 100%;
+     background-color: transparent;
+    
+ }
+
+ /*EL BOTON LO AGREGO EN LA PARTE DE BOTONES*/
+
+ #contact input[type="submit"] {
+     width: 166px;
+     margin: auto;
+     
+
+ }
+
+ 
+  .contacto-info {
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+
+  }
+
+  .contacto-info img {
+    width: 28px;
+    /*el vertical align me alinea la foto con el texto apra que no queda cada unoa rriba del otro o desalineado*/
+    vertical-align: middle;
+    /*con margin-right: separo la imagen del texto;*/
+    margin-right: 10px;
+  }
+
+
+
+
+   /*.........................FOOTER..................*/
+
+
+   footer {
+
+    background: #1D64F2;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 40px;
+   }
+
+   footer .contenedor {
+
+    display: flex;
+    justify-content: center;
+    /*este por defecto vienen en raw, por eso se pone uno al lado del otro. si lo pongo en columna pone uno abajo del otro*/
+    flex-direction: column;
+   }
+
+   footer img {
+    margin: 0 40px;
+    transform: rotate(0);
+    /*en la rotacion necesito definir primero el grado por defecto, luego en el :hover cuanto quiero que rote, y luego la transition que es el tiempo en el defect y en el hover. deg es grados en ingles*/
+    transition: 0.4s;
+
+   }
+
+   footer img:hover {
+    transform: rotate(360deg);
+    transition: 0.4s;
+
+   }
+
+   footer p {
+       color: #fff;
+       margin-top: 40px;
+   }
+
+   /*.....................WHATSAPP.............................*/
+
+   #whatsapp {
+
+    position: fixed;
+    top: 80%;
+    right: 1%;
+    z-index: 200;
+
+   }
+
+   /*..............estilo htm................*/
+
+   html {
+       /*este es la animaciopn de cndo hago scroll por el documento*/
+       scroll-behavior: smooth;
+   }
+
+   /*dando padding a las secciones para que cuando cliqueo en el link se vea el titulo y no se tape*/
+
+   #about, #advices, #courses, #why, #blog, #contact {
+
+    padding: 70px 0;
+   }
+
+
+   /*.............................IMPORTANTISIMA PARTE DEL RESPONSIVE DESIGN..........................*/
+
+   
+   
+   
+   .menu-icon {
+       /*display none sirve para eliminar un elemento de la pantalla*/
+    display: none;
+
+   }
+
+
+   /*en el medio que se va a ver esta pag sera con un ancho maximo de 800 px (suficiente para tablets como para fonos) si es solo para celus le ponemos 480px. */
+  
+  
+  
+   @media (max-width: 800px) {
+
+   
+
+    .lista-menu a {
+        color: rgb(255, 255, 255);
+    }
+
+
+    .menu-icon {
+        /*es lo contrario al display none*/
+        display: block;
+        /*primero no flotara porque esta el menu estorbando*/
+        float: right;
+        width: 40x;
+        height: 40px;
+        padding: 20px 20px;
+    }
+   
+    header nav {
+        position: absolute;
+        top: 83px;
+        left: 0;
+        height: 380px;
+        background: #1D64F2;
+        width: 100%;
+        display: none;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        color: white;
+    }
+
+    header nav ul li {
+
+        margin-bottom: 15px;
+    }
+
+    header h1 {
+            font-size: 65px;
+            margin-bottom: 25px;
+            padding-bottom: 75px;
+            -webkit-text-stroke: 1px #1D64F2
+    }
+    
+
+    h2 {
+        font-size: 24px;
+        color: white;
+    }
+
+    h3 {
+        font-size: 45px;
+    }
+
+    .contenedor-titulo {
+        margin: -6vh 0;        
+    }
+
+    .contenedor-titulo h2 {
+        font-size: 30px;
+        text-shadow: 1px 1px 3px black; 
+    }
+
+    #about .contenedor-sobremi {
+        
+        flex-direction: column;
+        
+    }
+
+    #about img {
+        width: 100%;
+        height: 250px;
+    }
+
+    #about .texto {
+        width: 98%;
+        text-align: center;
+    }
+
+    .contenedor-advices {
+        flex-direction: column;
+    }
+
+    #advices .advice {
+
+        width: 81%;
+        
+    }
+
+    #advices .ondas {
+        width: 100%;
+    }
+
+    #advices .icono {
+        margin-top: 20px;
+    }
+
+    .advice p {
+        
+        margin-top: 32px;
+    }
+
+    .contenedor-why {
+
+        flex-direction: column;
+    }
+
+    #why .item {
+        width: 100%;
+        }
+
+    .item ul {
+        padding: 0;
+    }
+
+    #blog .contenedor-publicaciones {
+        flex-direction: column;
+
+    }
+
+    #blog .publicacion {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    #contact form {
+        flex-direction: column;
+        width: 86%;
+    }
+
+    input[type="text"], input[type="email"] {
+        width: 84%;
+        
+    }
+
+    footer img {
+        margin: 24px;
+    }
+
+    .lista-menu li a {
+        color: rgb(245, 247, 250);
+    }
+
+    .contacto-info {
+        flex-direction: column;
+    }
+
+    #whatsapp img {
+
+        width: 53px;
+        height: 53px;
+    }
+/*
+    .contenedor-titulo h1 {
+        -webkit-text-stroke: 0.01cm white;
+        color: rgb(0, 65, 161);
+
+    }*/
+
+  }
+
+/*AHORA LO VAMOS A CONFIGURAR PARA IPAD Y TABLETS*/
+/*al ponerle un miniom me aseguro que no va a ser un celular*/
+
+@media (max-width: 330px) {
+
+    
+
+    header h1 {
+        font-size: 44px;
+        margin-bottom: 25px;
+        padding-bottom: 113px;
+        -webkit-text-stroke: 1px #1D64F2;
+    }
+
+    .contenedor-titulo h2 {
+
+        font-size: 25px;
+    }
+
+    #whatsapp img {
+
+        width: 30px;
+        height: 30px;
+        top: 86%;
+    }
+
+    #about img {
+
+        height: 250px;
+    }
+
+    .lista-menu li {
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+}
+  
+@media (min-width: 600px) and (max-width: 800px) {
+
+    header {
+        height: 70vh;
+    }
+
+    header h1 {
+        margin-bottom: 213px;
+        font-size: 90px;
+    }
+
+    .contenedor-advices {
+
+        width: 500px;
+        /*margin auto para centrarlo*/
+        margin: auto;
+    }
+
+    .contenedor-publicaciones {
+
+        width: 70%;
+        margin: auto;
+    }
+
+
+
+  }
