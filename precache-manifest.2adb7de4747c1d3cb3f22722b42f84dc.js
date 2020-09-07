@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0810b4eb8c3574504dc68e99d9848e17",
+    "revision": "05590a127cbcf6dd261d6fc85bcf71b7",
     "url": "/gino-pietrobon/index.html"
   },
   {
-    "revision": "ad29cb29db0029c80225",
-    "url": "/gino-pietrobon/static/css/main.9ef645fd.chunk.css"
+    "revision": "331be49501e0676de3b4",
+    "url": "/gino-pietrobon/static/css/main.5e8f037e.chunk.css"
   },
   {
     "revision": "fbce0f7a3b992c71d786",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gino-pietrobon/static/js/2.30d88bed.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ad29cb29db0029c80225",
-    "url": "/gino-pietrobon/static/js/main.cba35076.chunk.js"
+    "revision": "331be49501e0676de3b4",
+    "url": "/gino-pietrobon/static/js/main.7c4ba3b0.chunk.js"
   },
   {
     "revision": "66455bc3065604854285",
