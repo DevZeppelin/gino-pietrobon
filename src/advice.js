@@ -4,43 +4,24 @@ import './advice.css'
 
 const AdvicesListData = [
     {
-        title: 'Elegir el lenguaje correcto',
-        p: 'Creo que el lenguaje del momento es Javascript, por lo que en esta escuela comenzaremos aprendiendo esta tecnología moderna y muy demandada actualmente. Saber JS te dará el poder de agregar a una web la magia de hacer lo que quieras. Programar es crear.',
+        title: '¿Qué lenguaje elegir?',
+        p: 'Javascript es un lenguaje que se actualiza y crece junto a las comunidades de programadores. Hoy se puede hacer casi todo con JS: Webs, aplicaciones de escritorio o celular, y más.',
         clase: 'violeta',
         id: '1',
     },
     {
-        title: 'Aprender Inglés',
-        p: 'Hoy existen diversos métodos sencillos o aplicaciones que con un mínimo esfuerzo pueden aportarnos gran conocimiento, y con prácticas repetitivas podremos llegar a dominar este lenguaje que es una máquina de abrir puertas y oportunidades. Saber inglés hace la diferencia.',
+        title: '¿Importa el inglés?',
+        p: 'Sin duda es el idioma más importante del mundo, y aprenderlo nos abrirá puertas y oportunidades. En mi programa hay técnicas para familiarizarse y aprender de manera fácil.',
         clase: 'celeste',
         id: '2',
         
     },
     {
-        title: 'Estar actualizado',
-        p: 'Miles de compañías y cerebros compiten a diario para ganar terreno en el campo de batalla tecnológico, por lo que todo el tiempo emergen nuevas tecnologías y otras van quedando obsoletas. Por eso es importante estar al tanto para no enfocar neustra energía en el camino incorrecto.',
+        title: '¿Debo ir a la universidad?',
+        p: 'Hoy las empresas te contratarán por tus proyectos y viendo si realmente sabés programar. Los estudios académicos nos enriquecen y también la disciplina de estudiar, pero sin duda se puede ser un gran programador sin ir a una universidad.',
         clase: 'violeta',
         id: '3',
-    },
-    {
-        title: 'Organizarse',
-        p: 'Te voy a ayudar a armar un calendario en donde diagrames tus días, anotes tus objetivos, y encontrar en él un motivo para cumplir nuestras metas diarias y que cada nuevo día nos acerquemos un pasito más a nuestro objetivo de lo que queremos para nuestras vidas',
-        clase: 'celeste',
-        id: '4',    
-    },
-    {
-        title: 'Pasión',
-        p: 'Si logramos encontrar la pasión, vamos a transformar dos horas de espera en un centro médico en dos horas super productivas de estudio, hacer ejercicios, leer un artículo, o simplemente cualquier cosa interesante que nos haga pensar y matar el tiempo aprendiendo.',
-        clase: 'violeta',
-        id: '5',
-    },
-
-    {
-        title: 'Trabajo',
-        p: 'Si te metés en esto por la plata, no van a ser los mismos resultados que si lo haces por amor a lo que estás aprendiendo, decisión de que estás en el camino correcto, voluntad y esfuerzo. Los frutos llegan pero hace falta trabajo',
-        clase: 'violeta',
-        id: '6',
-    },
+    }
 ]
 
 
