@@ -9,8 +9,8 @@ function GoOn (){
         
         <section id="que-esperas">
             <div className="contenedor">
-                <h4>Con un celu con datos <i>podés</i> empezar a estudiar para <strong>programador</strong></h4>
-                <h4>Con una compu con wifi ya tenés <i>todo</i> para ser <strong>programador</strong></h4>
+                <p>Con un celu con datos <i>podés</i> empezar a estudiar para <strong>programador</strong></p>
+                <p>Con una compu con wifi ya tenés <i>casi todo</i> para ser <strong>programador</strong></p>
                 <a href="#contact">¡Animate a empezar!</a>
             </div>
 
