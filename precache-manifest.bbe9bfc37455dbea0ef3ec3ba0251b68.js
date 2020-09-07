@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "05590a127cbcf6dd261d6fc85bcf71b7",
+    "revision": "4a23d39212fab3451e8ed02b1081de6b",
     "url": "/gino-pietrobon/index.html"
   },
   {
-    "revision": "331be49501e0676de3b4",
+    "revision": "a84502378d11343342af",
     "url": "/gino-pietrobon/static/css/main.5e8f037e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gino-pietrobon/static/js/2.30d88bed.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "331be49501e0676de3b4",
-    "url": "/gino-pietrobon/static/js/main.7c4ba3b0.chunk.js"
+    "revision": "a84502378d11343342af",
+    "url": "/gino-pietrobon/static/js/main.92cd7101.chunk.js"
   },
   {
     "revision": "66455bc3065604854285",
