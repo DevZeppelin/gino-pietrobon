@@ -29,14 +29,14 @@ const AdvicesListData = [
         id: '4',    
     },
     {
-        title: 'PASIÓN',
+        title: 'Pasión',
         p: 'Si logramos encontrar la pasión, vamos a transformar dos horas de espera en un centro médico en dos horas super productivas de estudio, hacer ejercicios, leer un artículo, o simplemente cualquier cosa interesante que nos haga pensar y matar el tiempo aprendiendo.',
         clase: 'violeta',
         id: '5',
     },
 
     {
-        title: 'TRABAJO',
+        title: 'Trabajo',
         p: 'Si te metés en esto por la plata, no van a ser los mismos resultados que si lo haces por amor a lo que estás aprendiendo, decisión de que estás en el camino correcto, voluntad y esfuerzo. Los frutos llegan pero hace falta trabajo',
         clase: 'violeta',
         id: '6',

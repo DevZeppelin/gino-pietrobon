@@ -7,7 +7,7 @@ function About (){
 
         <section id="about">
             <div className="contenedor">
-                    <h3>Una compu y Wi-fi</h3>
+                    <h3>Primeros pasos para ser programador</h3>
                     <div className="contenedor-sobremi">
                         <div className="computadoras">
                             <img src="imagenes/computadoras.png" alt="" width="400px" height="400px" />
@@ -26,7 +26,7 @@ function About (){
                                 Tanta información nos marea y no encontramos ese <b>impulso</b> que nos haga arrancar. En esta escuela te voy a dar la información necesaria para que tus priomeros pasos sean firmes y seguros, y así poder empezar con criterio y apoyo ester largo y hermoso camino.
                             </p>
                             
-                            <a href="#advices">¡Seguir!</a>
+                            <a href="#advices">Go on!</a>
                         </div>
                     </div>
                 </div>

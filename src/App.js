@@ -24,7 +24,7 @@ function App() {
       <Fragment>
             <Header>
                   <h1>Dev Zeppelin</h1>
-                  <h2>Escuela de programación</h2>                  
+                  <h2>Primeros pasos para ser programador</h2>                  
             </Header>
             <About />
             <Advices />
