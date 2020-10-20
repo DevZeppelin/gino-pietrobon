@@ -1,0 +1,39 @@
+//Pasos para subir app de reacty a github pages:
+
+1. npm install --save-dev gh-pages
+
+2. Creo el repositorio en github y agrego como remoto:
+git remote add origin URL
+
+3. en el package.json pego la siguiente linea:
+"homepage":"https://devzeppelin.github.io/gino-pietrobon",
+
+Que es el package.json ? es un archivo de configuración con información sobre mi proyecto, aparecen las dependencias así sabe node que mi proyecto depende de esos módulos, cuando ejecuten el npm install LOS INSTALA. y también tiene los scripts npm start, y cuando desde la consola ejecute el comando npm start hace algo, para scripts personalizados usamos npm run NOMBRE_COMANDO
+
+4. en la parte de los scripts del package.json pegar:
+
+Y los scripts de ejecución:
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+
+5. luego ejecutar esos comandos en la consola:
+Correr los scripts por orden:
+- npm run build
+- npm run deploy
+
+Estos son comandos personalizados que ejecutan lo que agregue en el json.
+esto compila nuestra app en archivos estaticos para produccion.
+
+.Como no funcionaba elimine la carpeta git e hice un nuevo repositorio. luego:
+git init
+git status
+git add .
+git remote add origin https://github.com/DevZeppelin/gino-pietrobon.git
+git commit -m "first commit"
+npm run deploy
+git push -u origin master
+
+//así funciono ;)
+
+ 
+video bien explicado in english: https://www.youtube.com/watch?v=F8s4Ng-re0E

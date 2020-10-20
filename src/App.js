@@ -16,15 +16,15 @@ import Footer from './footer'
 
  
 
-//Fragment sirve para no poner divs donde no quiero. en el return de App no me permite ingresar dos compopnentes sin que esten en un dvi o algo. Si los meto en un div puede afectarme luego en mis estilos
+//Fragment sirve para no poner divs donde no quiero. en el return de App no me permite ingresar dos compopnentes sin que esten en un div o algo. Si los meto en un div puede afectarme luego en mis estilos
 //En este caso usamos un fragment explícito, pero si no quiero importarlo puedo simplemente ingresar mis componentes dentro de llaves vacías como estas => <> </> (Sugar sintax para usar Fragment)
 
 function App() {
   return (
       <Fragment>
             <Header>
-                  <h1>Dev Zeppelin</h1>
-                  <h2>Escuela de programación</h2>                  
+                  <h1>moonwatcher school</h1>
+                  <h2>consejos para entrar en el mundo dev</h2>                  
             </Header>
             <About />
             <Advices />
