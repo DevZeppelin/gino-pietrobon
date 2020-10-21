@@ -1,0 +1,102 @@
+/*.........................SECCION DE "ADVICES"..................*/
+  
+.contenedor-advices {  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+  }  
+  
+.advice {  
+    width: 24%;
+    /*el padding es para aumentar el tamaño interno del elemento*/
+    padding: 32px 25px 40px 25px;
+    /*top - right - bottom - left.. siempre en sentido horario*/
+    
+    /*es el redonde de las puntas*/
+    border-radius: 10px;
+    /*es el margen que le doy para separrarlos de los de abajo*/
+    margin-bottom: 40px;
+    /**/
+    position: relative;
+}
+  
+.advice h4 {  
+    font-size: 24px;
+    margin: 0; 
+    text-shadow: 1px 1px 3px black; 
+}
+  
+.advice p {  
+    font-size: 16px;
+    margin-bottom: 40px;
+    /*aca defino que todos los parrafos tengan el mismo alto para que los iconos queden alineados*/
+    height: 160px;
+}
+  
+.advice a {  
+    color: white;
+}
+  
+.contenedor-advices .violeta {  
+    background: linear-gradient(to top, rgb(20, 52, 121), rgb(11, 21, 49));
+    box-shadow: 0px 0px 15px 6px rgb(0, 185, 231);
+}
+  
+  
+  
+.contenedor-advices .celeste {
+    /*en google pongo linear gradient css y me sale para armarlo ahi*/
+    background: linear-gradient(to top, rgb(11, 21, 49), rgb(20, 52, 121));
+    /*en google pongo box shadow generator y lo configuro ahi*/
+    box-shadow: 0px 3px 15px 6px rgb(0, 185, 231);
+}
+  
+.advice:hover {    
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px 15px rgb(0, 185, 231);
+  
+}
+  
+.ondas {
+    /*aqui le digo que la imagen ocupe absolutamente todo el espacio*/
+    position: absolute;
+    /*como sabe la imagen wave donde es el 0? porque le pose position : relative a la clase advice que es la que tiene la position relative*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.35;
+}
+  
+.icono {
+    /*flotame los iconos a la derecha*/
+    float: right;
+}
+  
+@media (max-width: 800px){
+
+#advices .advice {
+  
+    width: 81%;
+    
+}
+
+#advices .ondas {
+    width: 100%;
+}
+
+#advices .icono {
+    margin-top: 20px;
+}
+
+.advice p {
+    
+    margin-top: 32px;
+}
+
+
+.contenedor-advices {
+    flex-direction: column;
+}
+
+}

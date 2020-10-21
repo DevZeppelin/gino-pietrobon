@@ -1,0 +1,39 @@
+
+  
+   /*.........................FOOTER..................*/
+  
+  
+   footer {
+  
+    background: #1D64F2;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 40px;
+   }
+  
+   footer .contenedor {
+  
+    display: flex;
+    justify-content: center;
+    /*este por defecto vienen en raw, por eso se pone uno al lado del otro. si lo pongo en columna pone uno abajo del otro*/
+    flex-direction: column;
+   }
+  
+   footer img {
+    margin: 0 40px;
+    transform: rotate(0);
+    /*en la rotacion necesito definir primero el grado por defecto, luego en el :hover cuanto quiero que rote, y luego la transition que es el tiempo en el defect y en el hover. deg es grados en ingles*/
+    transition: 0.4s;
+  
+   }
+  
+   footer img:hover {
+    transform: rotate(360deg);
+    transition: 0.4s;
+  
+   }
+  
+   footer p {
+       color: #fff;
+       margin-top: 40px;
+   }

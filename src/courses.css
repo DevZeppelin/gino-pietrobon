@@ -1,0 +1,44 @@
+/*.........................SECCION COURSES.....................*/
+
+.contenedor-mis-trabajos {
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+}  
+  
+   
+.item p {
+
+    text-align: center;
+}
+
+#courses .item {
+    
+    width: 15%;
+    /*el padding es para aumentar el tamaño interno del elemento*/
+    padding: 12px 60px 12px 60px;
+    /*top - right - bottom - left.. siempre en sentido horario*/
+    border-radius: 10px;
+    /*es el redonde de las puntas*/
+    margin-bottom: 40px;    
+    /*es el margen que le doy para separrarlos de los de abajo*/
+    position: relative;
+    
+}
+
+.item img:hover {
+    transform: scale(1.2);
+}
+
+.item img {    
+    max-width: 100%;
+}
+
+@media (max-width: 800px){
+    #courses .item {
+    
+        width: 100%;
+} 
+}

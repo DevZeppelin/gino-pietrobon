@@ -1,0 +1,49 @@
+  
+ .contenedor-why {  
+    display: flex;
+    /*el wrap era x si los elementos ocupan mucho lugar pasan a la otra línea*/
+    flex-wrap: wrap;
+    justify-content: space-around;    
+  }
+
+  
+  #why .item {  
+
+    width: 32%;
+    text-align: center;  
+  }
+  
+  #why ul {
+    list-style: none;
+  }
+  
+  /*aqui llamo al elemento hijo n°2. li es hijo de ul. el 1 seria la imagen . el 2 velocidad. y el 3 el parrafo. tmb puedo usar first-child o last-child*/
+  #why ul li:nth-child(2){  
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  
+  #why ul li:nth-child(3){  
+    line-height: 31px;
+  }
+
+  @media (max-width: 800px){
+
+    .contenedor-why {
+  
+      flex-direction: column;
+      
+    }
+
+    #why .item {
+      width: 100%;
+      
+      }
+
+    .item ul {
+      padding: 0;
+  }
+
+  }
